@@ -102,9 +102,10 @@ button {
   transition: background 1s;
 }
 
-section{
+section {
   margin-bottom: 200px;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -433,17 +434,21 @@ footer::after {
     text-align: center;
     font-size: 2rem;
   }
-p{
-  font-size: 1.1rem;
-  text-align: justify;
-}
+
+  p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
   .container {
     max-width: 768px;
   }
-section{
-  display: flex;
-  margin-bottom: 200px;
-}
+
+  section {
+    display: flex;
+    margin-bottom: 200px;
+  }
+
   .section-texts {
     display: flex;
     flex-direction: column;
@@ -525,18 +530,17 @@ section{
     bottom: 15px;
     left: 15px;
     border: 2px solid;
-    border-image: linear-gradient(var(--primary-color),
-        var(--primary-color-contrast));
+    border-image: linear-gradient(var(--primary-color), var(--primary-color-contrast));
     border-image-slice: 10;
     width: 100%;
   }
 
-  /*section 03*/
+  /*SECTION 03*/
   #section-stranger-things-gallery {
-
     background: var(--background-lamp-image) 50% / 115% no-repeat;
     margin-bottom: 250px;
   }
+
   #section-stranger-things-gallery .gallery-container {
     display: flex;
     align-items: center;
@@ -548,7 +552,8 @@ section{
     width: auto;
     margin-top: -80px;
   }
-  #section-stranger-things-gallery .gallery-image{
+
+  #section-stranger-things-gallery .gallery-image {
     width: 100px;
     height: 100px;
     outline: 17px solid var(--highlight-color);
@@ -564,46 +569,48 @@ section{
     margin-bottom: 200px;
   }
 
-  #section-form h2{
+  #section-form h2 {
     width: auto;
     margin-bottom: 20px;
   }
 
-  #section-form p{
+  #section-form p {
     padding: 0 25px 0 25px;
     margin-bottom: 80px;
   }
 
-  #section-form .form-content{
-  flex-direction: column;
-  padding: 0 25px 0 25px;
+  #section-form .form-content {
+    flex-direction: column;
+
   }
 
-  #section-form .form-content h3{
-    padding: 0 25px 0 25px;
-    flex-basis: 0%;
+  #section-form .form-content h3 {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
   }
 
-  #section-form .form-container{
-    flex-basis: 20%;  
+  #section-form .form-container {
     height: 500px;
+    padding: 0 20px 0 0;
   }
+
   #section-form .form-container::after {
-    width: 90%;
+    width: 94%;
   }
 
   #section-form .form-container form {
     height: 500px;
-    width: 90%;
-    
+    width: 100%;
+  }
 
+  #section-form .form-container form button {
+    font-size: 1rem;
   }
 
   /*FOOTER*/
-  footer::before, footer::after{
+  footer::before,
+  footer::after {
     width: 180px;
     height: 100px;
 
@@ -612,12 +619,14 @@ section{
   footer {
     padding: 40px 0;
   }
+
   footer p {
     max-width: 700px;
     font-size: 0.9rem;
     padding: 0 25px 0 25px;
-}
-footer img{
-  width: 20%;
-}
+  }
+
+  footer img {
+    width: 20%;
+  }
 }
