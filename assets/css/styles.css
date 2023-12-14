@@ -418,7 +418,8 @@ footer::after {
   transform: rotateZ(10deg);
 }
 
-/*Responsividade*/
+  /* Responsividade */
+
 @media screen and (max-width: 768px) {
 
   h1,
@@ -505,3 +506,4 @@ footer::after {
     }
 
 }
+
