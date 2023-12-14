@@ -418,16 +418,90 @@ footer::after {
   transform: rotateZ(10deg);
 }
 
-#section-stranger-things-trailer .video-frame {
-  background-color: var(--primary-color);
-}
+/*Responsividade*/
+@media screen and (max-width: 768px) {
 
-#section-stranger-things-trailer .video-frame iframe {
-  position: relative;
-  bottom: 24px;
-  left: 24px;
-  border: 2px solid;
-  border-image: linear-gradient(var(--primary-color),
-      var(--primary-color-contrast));
-  border-image-slice: 10;
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+
+.section-texts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+  #section-inverted-world {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #section-inverted-world .section-texts {
+    width: 80%;
+  }
+
+  #section-inverted-world h1 {
+
+    margin-bottom: 20px;
+  }
+
+  #section-inverted-world p {
+    text-align: justify;
+  }
+
+  #section-inverted-world .invert-element {
+    width: 70%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+
+  /*SECTION 02 */
+
+  #section-stranger-things-trailer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  #section-stranger-things-trailer  .section-texts{
+    padding: 0 2rem 0 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  #section-stranger-things-trailer .section-texts h2 {
+  max-width: 768px;
+  }
+  #section-stranger-things-trailer .section-texts p {
+   text-align: justify;
+    }
+    #section-stranger-things-trailer .video-frame {
+      display: flex;
+
+      align-self: center;
+      width: 85%;
+      background-color: var(--primary-color);
+    }
+    
+    #section-stranger-things-trailer .video-frame iframe {
+      display: flex;
+      align-items: center;
+      position: relative;
+      bottom: 15px;
+      left: 15px;
+      border: 2px solid;
+      border-image: linear-gradient(var(--primary-color),
+          var(--primary-color-contrast));
+      border-image-slice: 10;
+      width: 100%;
+    }
+
 }
